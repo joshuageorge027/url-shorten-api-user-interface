@@ -712,29 +712,29 @@
     height: 250px;
     /* text-align: center; */
     padding-top: 76px;
-    padding-bottom: 20px;
-
- 
-    h2{
-        font-size: 30px;
-        color: white;
-        margin-bottom: 18px;
-    }
-    button{
-            border: none;
-            padding: 1rem 2rem;
-            color: white;
-            border-radius: 30px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            background-color: var(--Cyan);           
-        }
-        
-
+    padding-bottom: 20px; 
 
 }
 
-.section__boost-link button:hover{
+
+.Boost{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 18px;
+} 
+
+.Started{
+    border: none;
+    width: 15%;
+    color: white;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: var(--Cyan);           
+}
+
+.section__boost-link .Started:hover{
     background-color: rgb(98, 243, 243);
 }
 
