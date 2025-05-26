@@ -21,7 +21,7 @@
               <figure>
                 <img src="./images/logo.svg" alt="Logo" class="logo">
               </figure>
-              <nav class="navbar">
+              <nav id="navbar" class="navbar">
                 <div class="main-nav-list">
                   <ul class="nav-list">
                     <li class="list-items"><a href="#">Features</a></li>
@@ -31,14 +31,15 @@
                 </div>
 
                 <div class="sign-in-sign-up">
-                  <button>Login</button>
-                  <button>Sign up</button>
+                  <button class="firstbtn">Login</button>
+                  <button class="secondbtn">Sign up</button>
                 </div>
               </nav>
             </section>
           </article>
           <figure class="mobile-nav-menu-icon">
-            <img src="./images/menu-alt-svgrepo-com (1).svg" alt="Mobile-menu-icon" width="30">
+            <img src="./images/menu-alt-svgrepo-com (1).svg" alt="Mobile-menu-icon" width="35" id="menu">
+            <img src="./images/icon-close.svg" alt="" id="close" width="25">
           </figure>
         </header>
 
@@ -49,7 +50,7 @@
                     <img src="./images/illustration-working.svg" alt="working-image">
                 </figure>
                 <div class="align-short-link">
-                  <h1 class="h1__title">
+                  <h1 class="h1__title animate">
                     More than just shorter links
                   </h1>
                   <p class="paragraph">
@@ -178,8 +179,26 @@
         </section>
        
         </footer>
-    
-  
+
+        <script>
+          const menu = document.getElementById("menu");
+          const close = document.getElementById("close");
+
+          menu.addEventListener("click", () => {
+            navbar.style.display = "block";
+            menu.style.display = "none";
+            close.style.display = "block"
+
+          })
+
+          close.addEventListener("click", () => {
+            menu.style.display = "block"
+            close.style.display = "none"
+            navbar.style.display = "none"
+          })
+
+
+        </script>
 
 </body>
 </html>
